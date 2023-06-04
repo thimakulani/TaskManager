@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="5dp"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent"
+        android:layout_centerVertical="true"
+    >
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        >
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+            >
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:text="@string/txt_signup"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:textSize="26dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/InputName"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:hint="@string/txt_name"
+                    />
+                </com.google.android.material.textfield.TextInputLayout>
+                
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/InputLastName"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:hint="@string/txt_surname"
+                    />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/InputContact"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:inputType="phone"
+                        android:phoneNumber="true"
+                        android:maxLines="1"
+                        android:hint="@string/txt_phone"
+                    />
+                </com.google.android.material.textfield.TextInputLayout>
+                
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/InputEmail"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:hint="@string/input_email"
+                    />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    app:passwordToggleEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/InputPassword"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:inputType="textPassword"
+                        android:password="true"
+                        android:maxLines="1"
+                        android:hint="@string/txt_password"
+                    />
+                </com.google.android.material.textfield.TextInputLayout>
+
+               
+
+               
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/BtnSignInBtn"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@string/txt_signup"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_horizontal"
+                />  
+                
+ 
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

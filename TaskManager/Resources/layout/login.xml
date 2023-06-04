@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="5dp"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    
+>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        
+        
+    >
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <com.airbnb.lottie.LottieAnimationView
+	            android:id="@+id/animation_view"
+	            android:layout_width="100dp"
+	            android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+	            app:lottie_fileName="login_icon.json"
+	            app:lottie_loop="true"
+	            app:lottie_autoPlay="true" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:text="@string/txt_login"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/InputEmail"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:hint="@string/input_email"
+                />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                app:passwordToggleEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/InputPassword"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:password="true"
+                    android:hint="@string/txt_password"
+                />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:text="@string/txt_forgot_password"
+                android:layout_gravity="end"
+                android:id="@+id/txt_forgot_password"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/BtnLogin"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/txt_login"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_horizontal"
+                />
+             <com.google.android.material.button.MaterialButton
+                android:id="@+id/BtnSignup"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/txt_signup"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_horizontal"
+                />
+            
+
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>
